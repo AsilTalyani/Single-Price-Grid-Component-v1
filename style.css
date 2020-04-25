@@ -1,0 +1,243 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --Cyan: rgb(42, 178, 175);
+  --BrightYellow: rgb(192, 223, 52);
+  --LightGray: rgb(229, 239, 245);
+  --GrayishBlue: rgb(152, 166, 189);
+  --DarkCyan: rgb(84, 180, 177);
+  --LightCyan: rgb(89, 190, 189);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Karla';
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: var(--LightGray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info {
+  width: 700px;
+  height: 550px;
+  border-radius: 10px;
+  background: var(--Cyan);
+  -webkit-box-shadow: grey;
+          box-shadow: grey;
+  -webkit-box-shadow: 1px 10px 48px -20px #757575;
+          box-shadow: 1px 10px 48px -20px #757575;
+}
+
+.dis {
+  width: 100%;
+  height: 50%;
+  background: white;
+  color: var(--Cyan);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.dis h1 {
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+
+.dis h3 {
+  padding-left: 3rem;
+  padding-top: 2rem;
+  font-size: 20px;
+  color: var(--BrightYellow);
+}
+
+.dis p {
+  padding-left: 3rem;
+  padding-top: 1rem;
+  line-height: 2rem;
+  color: var(--GrayishBlue);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.price-why {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 50%;
+}
+
+.price {
+  width: 50%;
+  height: 100%;
+  background: var(--DarkCyan);
+  border-bottom-left-radius: 10px;
+  color: white;
+}
+
+.price h3 {
+  padding-left: 3rem;
+  padding-top: 3rem;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.price span {
+  font-size: 32px;
+  padding-left: 3rem;
+  font-weight: 400;
+  color: white;
+  margin-top: 3px;
+}
+
+.price .p {
+  color: #72DFE2;
+  padding-top: 1rem;
+}
+
+.price .p2 {
+  padding-top: 1rem;
+  padding-left: 3rem;
+  color: white;
+}
+
+.price .btn {
+  margin-left: 3rem;
+  margin-top: 2rem;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  background: var(--BrightYellow);
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  cursor: pointer;
+}
+
+.price .btn button {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: 'Karla';
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.price .btn button:focus {
+  outline: none;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 1px 10px 18px -6px #757575;
+          box-shadow: 1px 10px 18px -6px #757575;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
+.why {
+  width: 50%;
+  height: 100%;
+  background: var(--LightCyan);
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+
+.why h3 {
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+
+.why p {
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-right: 6rem;
+  font-weight: lighter;
+}
+
+@media (max-width: 812px) {
+  .info {
+    height: 90%;
+    width: 95%;
+  }
+  .dis {
+    height: 350px;
+  }
+  .dis h1 {
+    padding-right: 1rem;
+    font-size: 28px;
+  }
+  .dis h3 {
+    padding-right: 1rem;
+  }
+  .dis p {
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 15px;
+  }
+  .price-why {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 700px;
+  }
+  .price {
+    width: 100%;
+    height: 350px;
+    border-bottom-left-radius: 0px;
+  }
+  .why {
+    width: 100%;
+    height: 350px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 1opx;
+  }
+  .why h3 {
+    font-size: 23px;
+  }
+  .why p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .dis h1 {
+    font-size: 20px;
+  }
+  .dis h3 {
+    font-size: 15px;
+  }
+  .dis p {
+    font-size: 12px;
+  }
+  .price .btn {
+    width: 200px;
+    margin-left: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
